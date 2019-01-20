@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Javascript Editor</title>
+  <link rel="shortcut icon" type="image/x-icon" href="js.ico" />
+  <meta name="description" content="Javascript Editor">
+  <link href="estilo.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="container">
+    <div id="content-box">
+      <textarea id="textarea-input" placeholder="Ingresa tu código aquí..." spellcheck="false" wrap="soft"></textarea>
+      <pre id="highlight-area"></pre>
+    </div>
+    <div class="output">
+      <ul id="output-list"></ul>
+    </div>
+  </div>
+  <div id="bottom-bar">
+    <i id="run" class="fas fa-play-circle btn-bar"></i>
+    <i id="download" class="fas fa-save btn-bar"></i>
+  </div>
+  <div style="display: none" class="autocomplete" id="div-suggester">
+    <ul class="suggester" id="ul-suggester"></ul>
+  </div>
+  <script src="editor.js" type="text/javascript"></script>
+</body>
+
+</html>
