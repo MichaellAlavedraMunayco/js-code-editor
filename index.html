@@ -13,7 +13,14 @@
 <body>
   <div id="container">
     <div id="content-box">
-      <textarea id="textarea-input" placeholder="Ingresa tu código aquí..." spellcheck="false" wrap="soft"></textarea>
+      <textarea id="textarea-input" placeholder="Ingresa tu código aquí..." spellcheck="false" wrap="soft">//secuencia de fibonacci
+((numMax) => {
+    for(var fibArray = [0,1], i = 0, j = 1,k = 0; k < numMax; i = j, j = x, k++){
+        x = i + j;
+        fibArray.push(x);
+    }
+    print(fibArray);
+})(100);</textarea>
       <pre id="highlight-area"></pre>
     </div>
     <div class="output">
